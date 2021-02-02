@@ -7,8 +7,8 @@ app.use(cors());
 app.use(bodyparser.urlencoded({extended: true}));
 
 app.post("/sendmessage", (req, res) => {
-const accountSid = 'AC106feefcb6df77fa0cc09cbfaba3a607';
-const authToken = '3de51174b63b0506643d167ff351a6fd'
+const accountSid = 'api sid';
+const authToken = 'api token'
 const client = require('twilio')(accountSid, authToken);
 const numTo = req.body.numberTo;
 const numFrom = req.body.numberFrom;
